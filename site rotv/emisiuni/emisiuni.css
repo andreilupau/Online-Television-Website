@@ -1,0 +1,218 @@
+  
+                                /* Emisiuni */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+    margin: 50px;
+    padding: 50px;
+}
+
+/* Carduri */
+.card {
+    display: flex;
+}
+
+main figure {
+    flex: 1;
+    margin: 0;
+}
+
+main figure img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Secțiunea cu detalii */
+.details-section {
+    flex: 1;
+    background-color: #3B2000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.details-section header h2 {
+    color: #8C8C8C;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+.details-section p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+button {
+    background-color: #00FF00;
+    color: #000;
+    font-weight: bold;
+    font-size: 23px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #00cc00;
+    transform: scale(1.05);
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    /* background-color: #333333; */
+}
+
+nav a:hover {
+    transform: scale(1.01);
+    color: red;
+    text-decoration-thickness: 3px;
+    
+}
+       
+article a {
+    text-decoration: none;
+}        
+                                    /* ---Meniu Navigatie--- */
+
+#logo {
+    position: relative;
+    left: 45px;
+    top: 30px;
+
+    height: 110px;
+    width: 110px;
+
+}
+                                    
+                                    
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #000000;
+    height: 75px;
+}
+nav ul {
+    list-style: none; 
+    display: flex; 
+}
+nav ul li {
+    margin-right: 17px; 
+
+}
+nav ul li a {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight:bold;
+    text-decoration: none; 
+    font-size: 17px;
+
+    color: white;
+}
+
+nav ul li a.active {
+    color: red;
+}
+
+
+
+
+.nav-left {
+    margin-left: 40px;
+}
+.nav-right {
+    margin-left: 700px;
+}
+
+/* Punctul rosu de live */
+.nav-left li:first-child a::before {
+    content: "•";
+    color: rgb(109, 109, 109);
+    margin-right: 5px;
+}
+
+
+
+                                        /* Footer */
+
+footer {
+    margin-top: 100px;
+
+    background-color: #232222;
+    color: white; 
+    padding: 20px 0;
+
+
+}
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    /* nou */
+    background-color: #232222; 
+}
+
+.footer-links a {
+    font-weight: 100;
+}
+
+.footer-links a:hover {
+    color: red; 
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+}
+.footer-contact p {
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+
+
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+}
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-drepturi {
+    height:5px;
+
+    text-align: center;
+    padding: 10px;
+    background-color: #232222; 
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-top: 1px solid #232222; 
+}
+

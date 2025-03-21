@@ -1,0 +1,251 @@
+
+/* Pagina despre */
+
+fieldset {
+    border: none;
+}
+
+
+main {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+header p {
+    color: rgb(149, 149, 149);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 0;
+}
+p {
+    text-align: center;
+    margin: 10px 0 30px 0;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    width: 100%;
+    max-width: 600px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    margin-bottom: 5px;
+}
+.form-group input, .form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+.form-group:nth-child(5) {
+    grid-column: span 2;
+}
+
+
+button {
+    grid-column: span 2;
+    justify-self: center;
+
+    width: 200px;
+
+    padding: 15px;
+
+    background-color: #000080;
+    color: white;
+
+    border-radius: 5px;
+    border: none;
+    font-size: 1em;
+    
+    
+    cursor: pointer;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #000066;
+}
+
+
+
+                                            /* Globale */
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    transform: scale(1.01);
+    color: red;
+    text-decoration-thickness: 3px;
+    
+}
+
+
+
+
+
+
+                                    /* ---Meniu Navigatie--- */
+
+#logo {
+    position: relative;
+    left: 45px;
+    top: 30px;
+
+    height: 110px;
+    width: 110px;
+
+}
+                                    
+                                    
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #232222;
+    height: 75px;
+}
+nav ul {
+    list-style: none; 
+    display: flex; 
+}
+nav ul li {
+    margin-right: 17px; 
+
+}
+nav ul li a {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight:bold;
+    text-decoration: none; 
+    font-size: 17px;
+
+    color: white;
+}
+
+nav ul li a.active {
+    color: red;
+}
+
+
+
+
+.nav-left {
+    margin-left: 40px;
+}
+.nav-right {
+    margin-left: 700px;
+}
+
+/* Punctul rosu de live */
+.nav-left li:first-child a::before {
+    content: "•";
+    color: rgb(109, 109, 109);
+    margin-right: 5px;
+}
+
+
+
+
+
+                                        /* Footer */
+
+footer {
+    margin-top: 100px;
+
+    background-color: #232222;
+    color: white; 
+    
+}
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    background-color: #232222;
+}
+
+.footer-links a {
+    font-weight: 100;
+}
+
+.footer-links a:hover {
+    color: red; 
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+}
+.footer-contact p {
+    margin: 20px 0;
+    font-size: 0.9rem;
+    
+}
+
+
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+}
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-drepturi {
+    display: flex;
+    justify-content: center; 
+
+    border-top: 1px solid #232222; 
+    height: 40px;
+}
+
+
+footer figure {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.footer-contact {
+    width: 300px;
+}

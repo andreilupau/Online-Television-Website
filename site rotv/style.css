@@ -1,0 +1,491 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    color: red;
+    text-decoration-thickness: 3px;
+}
+
+
+article:hover {
+    transform: scale(1.01);
+}
+
+
+                            /* ---Meniu Navigatie--- */
+
+#logo {
+    position: relative;
+    left: 45px;
+    top: 30px;
+
+    height: 110px;
+    width: 110px;
+
+}
+                                    
+                                    
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: #232222;
+    height: 100px;
+}
+nav ul {
+    list-style: none; /* Elimină punctele de listă */
+    display: flex; 
+}
+nav ul li {
+    margin-right: 17px;
+
+}
+nav ul li a {
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight:bold;
+    text-decoration: none;
+    font-size: 17px;
+
+    color: white;
+}
+
+
+.nav-left {
+    margin-left: 40px;
+}
+.nav-right {
+    margin-left: 700px;
+}
+
+/* Punctul rosu de live */
+.nav-left li:first-child a::before {
+    content: "•";
+    color: rgb(109, 109, 109);
+    margin-right: 5px;
+}
+
+
+                            /* ---Main--- */
+
+
+main {
+    display: flex;
+    flex-direction: row;
+    /* background-color: rgb(222, 134, 134); */
+
+}
+
+.prima-stire {
+    height: 350px;
+    display: flex;
+    position: relative;
+
+    top: 80px;
+    left: 43px;
+
+    /* background-color: aqua; */
+}
+
+#prima-imagine {
+    width: 580px;
+}
+
+/* textul la prima stire */
+#primul-text {
+    position: relative;
+    bottom: 33px;
+    
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    font-weight:bolder;
+
+    text-align:justify;
+    text-decoration: none;
+
+    padding: 20px;
+    
+    color: #9b9fe9;
+    background-color: #1c1e25;
+    width: 400px;
+    height: 310px;
+
+    line-height: 50px;
+
+}
+
+/* textul "de ultima ora" */
+#ultima-ora{
+    text-align: start;
+    color: rgb(187, 38, 38);
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 500;
+}
+
+/* containerul aside */
+aside {
+    position: relative;
+    left: 150px;
+
+    height: 500px;
+    width: 270px;
+
+    /* border: 2px solid black; */
+
+    font-weight: bold;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+/* stirea */
+aside article {
+    height: 230px; 
+    width: 270px;
+    /* background-color: #967579; */
+}
+aside article a {
+    text-decoration: none;
+    color: black;
+
+}
+aside article a:hover {
+    text-decoration: underline;
+
+}
+
+aside article a h3 {
+    color: rgb(237, 230, 230);
+    background-color: #5e2a2a;
+    
+    margin: 0; 
+    padding: 5px;
+}
+
+aside article img {
+    display: block;
+
+    height: 171px;
+    width: 270px;
+
+}
+
+
+
+                            /* Header (stiri actuale, articole, emisiuni) */
+header {
+    height: 70px;
+    width: 250px;
+
+    color: white;
+    background-color: #800000;
+
+    font-weight: 400;
+    font-size: 2rem;
+
+    text-align: center;
+    line-height: 70px;
+}
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+#articole {
+    background-color: #050B86;  
+}
+#emisiuni {
+    background-color: #D484F6;
+}
+
+
+
+                            /* Stiri actuale */
+
+/* container */
+.stiri-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    padding-left: 45px;
+
+    /* background-color: rgb(163, 110, 110); */
+}
+
+/* container stire */
+.stiri-item {
+    width: 90%;
+}
+.stiri-text p{
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-align: justify;
+
+    color: white;
+    background-color: #800000;
+    margin: 0;
+
+    height: 80px;
+    padding: 15px;
+
+    line-height: 31px;  
+}
+
+.stiri-item a img {
+    display: block;
+    width: 100%;
+}
+
+
+
+                            /* ---Articole--- */
+
+
+.articole-grid {
+    padding: 30px;
+    padding-left: 200px;
+}
+
+.articole-item {
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.articole-item a {
+    display: flex;
+}
+
+.articole-item p {
+    font-family: Arial, sans-serif;
+    font-size: 1.7rem;
+    text-align: justify;
+
+    color: white;
+    background-color: #050B86;
+    
+    margin: 0;
+    padding: 40px;
+
+    width: 50%;
+    line-height: 45px;
+}
+
+.articole-item a img {
+    width: 400px;
+}
+
+
+
+                            /* ---Emisiuni--- */
+
+.emisiuni-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 30px;
+    padding-left: 70px;
+
+    background-color: #5e3670;
+}
+.emisiuni-item {
+    width: 70%;
+}
+
+
+.emisiuni-text p {
+    font-family: Arial, sans-serif;
+    font-weight: 600;
+
+    font-size: 2rem;
+    text-align: center;
+
+    color: black;
+    background-color: #D484F6;
+    margin: 0;
+
+    height: 50px;
+    width: 110%;
+    
+    padding-top: 10px;
+}
+
+.emisiuni-item a img {
+    display: block; 
+    width: 110%;
+    
+}
+
+
+                            /* Footer */
+
+footer {
+    margin-top: 100px;
+
+    background-color: #232222;
+    color: white; 
+    padding: 20px 0;
+
+
+}
+.footer-logo img {
+    width: 100px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    /* nou */
+    background-color: #232222; 
+}
+
+.footer-links a {
+    font-weight: 100;
+}
+
+.footer-links a:hover {
+    color: red; 
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    
+}
+.footer-contact p {
+    margin: 20px 0;
+    font-size: 0.9rem;
+}
+
+
+.footer-social a {
+    color: white;
+    margin: 0 10px;
+}
+.footer-social img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-drepturi {
+    height:5px;
+
+    text-align: center;
+    padding: 10px;
+    background-color: #232222; 
+    font-size: 0.85rem;
+    font-weight: bold;
+    border-top: 1px solid #232222; 
+}
+
+
+
+
+
+                            /* Responsive [in work] */
+
+/*
+
+.off-screen-menu {
+    background-color: rgb(34, 37, 49);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+    z-index: 100; 
+}
+.off-screen-menu.active {
+    right: 0;
+}
+    
+.off-screen-menu ul {
+    list-style: none;
+}
+    
+
+.ham-container {
+    padding: 1rem;
+    display: flex;
+    background-color: rgb(34, 37, 49);
+
+    
+}
+
+.ham-menu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.ham-menu span {
+    height: 5px;
+    width: 100%;
+    background-color: #6F86FF;
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+.ham-menu.active span {
+    background-color: white;
+}
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+
+@media screen and (max-width: 768px) {
+    nav[aria-label="Meniu principal"] ul {
+        display: none;
+    }
+
+ 
+    .ham-container {
+        display: block;
+    }
+}
+
+
+@media screen and (min-width: 769px) {
+    .ham-container {
+        display: none;
+    }
+}
+/*
