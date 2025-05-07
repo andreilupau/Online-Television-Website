@@ -45,13 +45,11 @@ I created a website designed and developed for an online television platform cal
 
 ## 🖼️ Screenshots
 
-### 🖥️ Desktop View
-![Desktop Screenshot](./screenshots/desktop.png)
+<img src="https://github.com/user-attachments/assets/e7d116e4-d1cf-4a14-b7d4-6ce699504767" style="width: 30%;">
+<img src="https://github.com/user-attachments/assets/d0741cdf-e636-42bb-a27c-d8dfbee3c942" style="width: 30%;">  
+<img src="https://github.com/user-attachments/assets/831fe7f6-60e5-4a97-a61d-22767a6db05a" style="width: 30%;">  
+<img src="https://github.com/user-attachments/assets/96145612-85f3-4e77-bad2-907f199c20e3" style="width: 30%;">  
+<img src="https://github.com/user-attachments/assets/3c771fb6-ecf6-4531-88c7-4afe57328223" style="width: 30%;">  
 
-### 📱 Mobile View
-![Mobile Screenshot](./screenshots/mobile.png)
-
-> 📌 *All layouts are mobile-first and optimized for performance.*
 
 ---
-
