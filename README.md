@@ -7,18 +7,6 @@ I created a website designed and developed for an online television platform cal
 
 ---
 
-
-## 📌 Table of Contents
-
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Screenshots](#screenshots)
-- [Installation](#installation)
-- [Folder Structure](#folder-structure)
-- [Author](#author)
-
----
-
 ## ✨ Features
 
 - 🎥 **Live TV streaming preview** section
