@@ -2,7 +2,7 @@
 
 I created a website designed and developed for an online television platform called **ROTV LIVE**, allowing users to stay connected with live TV streams, current news, and subscription features.
 
-![ROTV Banner](./screenshots/banner.png)
+![ROTV Banner]([./screenshots/banner.png](https://github.com/user-attachments/assets/55b25e8a-89ae-41a3-b819-40455a78d0eb))
 
 ---
 
@@ -53,10 +53,3 @@ I created a website designed and developed for an online television platform cal
 
 ---
 
-## ⚙️ Installation [working]
-
-To run this project locally:
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/username/rotv-live.git
