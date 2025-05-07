@@ -39,7 +39,6 @@ I created a website designed and developed for an online television platform cal
 | Styling      | CSS3, Flexbox, Grid      |
 | Responsiveness | Media Queries           |
 | Accessibility| ARIA labels, alt text    |
-| Deployment   | GitHub Pages (optional)  |
 
 ---
 
