@@ -1,10 +1,12 @@
 # 📺 ROTV LIVE – Online Television Platform [working on it]
 
 I created a website designed and developed for an online television platform called **ROTV LIVE**, allowing users to stay connected with live TV streams, current news, and subscription features.
+<img src="https://github.com/user-attachments/assets/05356675-2c77-4d8b-8608-7488829436ba" style="width: 50%;">
+![logo](https://github.com/user-attachments/assets/05356675-2c77-4d8b-8608-7488829436ba)
 
-![ROTV Banner]([./screenshots/banner.png](https://github.com/user-attachments/assets/55b25e8a-89ae-41a3-b819-40455a78d0eb))
 
 ---
+
 
 ## 📌 Table of Contents
 
