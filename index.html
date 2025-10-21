@@ -5,37 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="logo.png">
-    <title>ROTV - Pagina principala</title>
+    <title>ROTV - Welcome</title>
 </head>
 <body>
     
-
-
-    <!-- Meniu hamburger [in work..] 
-    <div class="off-screen-menu">
-        <ul>
-            <li><a href="#">Live</a></li>
-            <li><a href="#">Stiri</a></li>
-            <li><a href="#">Articole</a></li>
-            <li><a href="#">Emisiuni</a></li>
-            <li><a href="#">Despre noi</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </div>
-
-    <nav class="ham-container">
-        <div class="ham-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </nav>
-    -->
     
     
-    
-    
-    <!-- Meniu Navigatie -->
+    <!-- NAVIGATION BAR -->
     <nav aria-label="Meniu principal">
         <a href="index.html" aria-label="Pagina principală">
             <img id="logo" src="logo.png" alt="logo ROTV">
@@ -48,10 +24,17 @@
             <li><a href="emisiuni/emisiuni.html">Emisiuni➣</a></li>
         </ul>
         <ul class="nav-right">
-            <li><a href="despre/despre.html" >Despre noi➣</a></li>
+            <li><a href="despre/despre.html" >Despre➣</a></li>
             <li><a href="contact/contact.html" >Contact➣</a></li>
         </ul>    
     </nav> 
+
+    <!-- Add hamburger menu button -->
+    <div class="ham-menu" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
     
     
@@ -199,7 +182,7 @@
             </figure>
             <nav class="footer-links">
                 <ul>
-                    <li><a href="despre/despre.html">Despre noi</a></li>
+                    <li><a href="despre/despre.html">Despre</a></li>
                     <li><a href="contact/contact.html">Contact</a></li>
                 </ul>
             </nav>
@@ -214,5 +197,17 @@
     
     
     <script src="script.js"></script>
+    <script>
+        // JavaScript to toggle the navigation menu
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamMenu = document.querySelector('.ham-menu');
+            const nav = document.querySelector('nav');
+
+            hamMenu.addEventListener('click', () => {
+                nav.classList.toggle('active');
+                hamMenu.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
