@@ -124,7 +124,8 @@ nav ul li a:hover {
 main {
     display: flex;
     flex-direction: row;
-
+    flex-wrap: wrap;
+    justify-content: start;
 }
 
 .prima-stire {
@@ -135,7 +136,6 @@ main {
     top: 80px;
     left: 43px;
 
-    /* background-color: aqua; */
     text-decoration: none;
 }
 
@@ -143,46 +143,37 @@ main {
     width: 580px;
 }
 
-/* text for the first news item */
 #primul-text {
     position: relative;
     bottom: 40px;
     left: 30px;
-    
+
     font-family: Geneva, Tahoma, sans-serif;
     font-size: 2.5rem;
-    font-weight:bolder;
+    font-weight: bolder;
 
-    
     color: #19074d;
-    /* background-color: #1c1e25; */
     width: 380px;
     height: 310px;
     line-height: 60px;
-    
-    /* border: #232222 4px solid; */
+    z-index: 2; /* Ensures the text is above other elements */
 }
 
-
-
-/* Hover effect for all text on the page */
 .prima-stire:hover #primul-text, aside article a:hover h3, article a:hover p {
     text-decoration: underline;
 }
 
-
-
-/* textul "de ultima ora" */
-#ultima-ora{
+#ultima-ora {
     text-align: start;
     color: rgb(187, 38, 38);
 
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
     font-weight: 500;
+    z-index: 1; /* Ensures it is below the text of prima-stire */
+    position: relative;
 }
 
-/* containerul aside */
 aside {
     position: relative;
     left: 150px;
@@ -190,31 +181,26 @@ aside {
     height: 500px;
     width: 270px;
 
-    /* border: 2px solid black; */
-
     font-weight: bold;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-}
-/* stirea */
 aside article {
-    height: 230px; 
+    height: 230px;
     width: 270px;
-    /* background-color: #967579; */
 }
+
 aside article a {
     text-decoration: none;
     color: black;
-
 }
-
 
 aside article a h3 {
     color: rgb(237, 230, 230);
     background-color: #5e2a2a;
-    
-    margin: 0; 
+
+    margin: 0;
     padding: 5px;
 }
 
@@ -223,12 +209,62 @@ aside article img {
 
     height: 171px;
     width: 270px;
-
 }
 
+@media (max-width: 840px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .prima-stire {
+        flex-direction: column;
+        align-items: center;
+        top: 20px;
+        left: 0;
+    }
 
-                            /* Header (stiri actuale, articole, emisiuni) */
+    #prima-imagine {
+        width: 100%;
+    }
+
+    #primul-text {
+        position: static;
+        font-size: 1.8rem;
+        width: 90%;
+        height: auto;
+        line-height: 1.5;
+        text-align: center;
+    }
+
+    #ultima-ora {
+        position: static;
+        text-align: center;
+        margin-top: 200px;
+        font-weight: bold;
+    }
+
+    aside {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+
+    aside article {
+        width: 100%;
+        height: auto;
+    }
+
+    aside article img {
+        width: 100%;
+        height: auto;
+    }
+
+    aside article a h3 {
+        font-size: 1.2rem;
+    }
+}
 header {
     height: 70px;
     width: 250px;
@@ -256,6 +292,9 @@ header a {
 
 
 
+
+
+
                             /* Stiri actuale */
 
 /* container */
@@ -264,28 +303,23 @@ header a {
     grid-template-columns: repeat(3, 1fr);
     padding: 30px;
     padding-left: 45px;
-
-    /* background-color: rgb(163, 110, 110); */
 }
 
-/* container stire */
 .stiri-item {
     width: 90%;
 }
-.stiri-text p{
+
+.stiri-text p {
     font-family: Arial, sans-serif;
     font-size: 1.5rem;
     text-decoration: none;
     text-align: justify;
-
     color: white;
     background-color: #800000;
     margin: 0;
-
     height: 80px;
     padding: 15px;
-
-    line-height: 31px;  
+    line-height: 31px;
 }
 
 .stiri-item a img {
@@ -293,7 +327,27 @@ header a {
     width: 100%;
 }
 
+/* Responsive styles */
+@media (max-width: 840px) {
+    .stiri-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        padding-left: 10px;
 
+        gap: 50px;
+    }
+
+    .stiri-item {
+        width: 100%;
+    }
+
+    .stiri-text p {
+        font-size: 1.2rem; /* Adjust font size */
+        height: auto; /* Allow dynamic height */
+        padding: 10px;
+        line-height: 1.5;
+    }
+}
 
                             /* ---Articole--- */
 
@@ -331,6 +385,31 @@ header a {
     width: 400px;
 }
 
+
+@media (max-width: 840px) {
+    .articole-grid {
+        padding: 20px;
+        padding-left: 10px;
+    }
+
+    .articole-item a {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articole-item p {
+        font-size: 1.3rem; /* Adjust font size */
+        width: 100%; /* Full width */
+        padding: 20px;
+        line-height: 1.5;
+    }
+
+    .articole-item a img {
+        width: 100%; /* Full width */
+        height: auto; /* Maintain aspect ratio */
+
+    }
+}
 
 
                             /* ---Emisiuni--- */
@@ -371,8 +450,38 @@ header a {
     
 }
 
+/* emisiuni responsive */
+@media (max-width: 840px) {
+    .emisiuni-grid {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        padding-left: 10px;
 
-                            /* Footer [needs work]*/
+        gap: 50px;
+    }
+
+    .emisiuni-item {
+        width: 100%;
+    }
+
+    .emisiuni-text p {
+        font-size: 1.5rem; /* Adjust font size */
+        height: auto; /* Allow dynamic height */
+        padding: 10px;
+        line-height: 1.5;
+        width: 100%;
+    }
+
+    .emisiuni-item a img {
+        width: 100%; /* Full width */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+
+
+
+                            /* FOOTER*/
 
 footer {
     margin-top: 60px;
@@ -437,150 +546,15 @@ footer {
 }
 
 
-
-
-
-                            /* Responsive [in work] */
-
-/*
-
-.off-screen-menu {
-    background-color: rgb(34, 37, 49);
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
-    text-align: center;
-    font-size: 3rem;
-    transition: .3s ease;
-    z-index: 100; 
-}
-.off-screen-menu.active {
-    right: 0;
-}
-    
-.off-screen-menu ul {
-    list-style: none;
-}
-    
-
-.ham-container {
-    padding: 1rem;
-    display: flex;
-    background-color: rgb(34, 37, 49);
-
-    
-}
-
-.ham-menu {
-    height: 50px;
-    width: 40px;
-    margin-left: auto;
-    position: relative;
-}
-.ham-menu span {
-    height: 5px;
-    width: 100%;
-    background-color: #6F86FF;
-    border-radius: 25px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: .3s ease;
-}
-.ham-menu span:nth-child(1) {
-    top: 25%;
-}
-.ham-menu span:nth-child(3) {
-    top: 75%;
-}
-.ham-menu.active span {
-    background-color: white;
-}
-.ham-menu.active span:nth-child(1) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-.ham-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-.ham-menu.active span:nth-child(3) {
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-
-
-@media screen and (max-width: 768px) {
-    nav[aria-label="Meniu principal"] ul {
-        display: none;
-    }
-
- 
-    .ham-container {
-        display: block;
-    }
-}
-
-
-@media screen and (min-width: 769px) {
-    .ham-container {
-        display: none;
-    }
-}
-
-/* Hamburger menu styles */
-.ham-menu {
-    display: none; /* Hidden by default */
-    cursor: pointer;
-    width: 40px;
-    height: 30px;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.ham-menu span {
-    display: block;
-    height: 4px;
-    width: 100%;
-    background-color: white;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-.ham-menu.active span:nth-child(1) {
-    transform: translateY(13px) rotate(45deg);
-}
-.ham-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-.ham-menu.active span:nth-child(3) {
-    transform: translateY(-13px) rotate(-45deg);
-}
-
-/* Show hamburger menu in responsive mode */
-@media (max-width: 768px) {
-    .ham-menu {
-        display: flex;
-    }
-
-    nav ul {
-        display: none; /* Hide nav links */
-    }
-
-    nav.active ul {
-        display: flex; /* Show nav links when active */
+/* responsive footer */
+@media (max-width: 840px) {
+    .footer-content {
         flex-direction: column;
-        gap: 10px;
-        width: 100%;
-        background-color: #1d0f48;
-        padding: 10px;
+        gap: 20px;
+    }
+
+    .footer-links ul {
+        flex-direction: column;
+        align-items: center;
     }
 }
