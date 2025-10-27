@@ -1,201 +1,153 @@
 <!DOCTYPE html>
 <html lang="ro">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="logo.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/x-icon" href="logo.png" />
     <title>ROTV - Welcome</title>
-</head>
-<body>
-    
-    
-    
+  </head>
+  <body>
     <!-- NAVIGATION BAR -->
     <nav aria-label="Meniu principal">
-        <a href="index.html" aria-label="Pagina principală">
-            <img id="logo" src="logo.png" alt="logo ROTV">
-        </a>
-                
-        <ul class="nav-left">
-            <li><a href="live/live.html">Live➣</a></li>
-            <li><a href="stiri/stiri.html">Stiri➣</a></li>
-            <li><a href="articole/articole.html">Articole➣</a></li>
-            <li><a href="emisiuni/emisiuni.html">Emisiuni➣</a></li>
-        </ul>
-        <ul class="nav-right">
-            <li><a href="despre/despre.html" >Despre➣</a></li>
-            <li><a href="contact/contact.html" >Contact➣</a></li>
-        </ul>    
+      <a href="index.html" aria-label="Pagina principală">
+        <img id="logo" src="logo.png" alt="logo ROTV" />
+      </a>
+
+      <ul class="nav-left">
+        <li><a href="live/live.html">Live➣</a></li>
+        <li><a href="stiri/stiri.html">Stiri➣</a></li>
+        <li><a href="articole/articole.html">Articole➣</a></li>
+        <li><a href="emisiuni/emisiuni.html">Emisiuni➣</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="despre/despre.html">Despre➣</a></li>
+        <li><a href="contact/contact.html">Contact➣</a></li>
+        <!-- Dark mode toggle button (right corner) -->
+        <li>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Comută modul întunecat"
+            title="Mod întunecat/Mod luminos"
+          >
+            🌙
+          </button>
+        </li>
+      </ul>
     </nav>
 
     <!-- Add hamburger menu button -->
     <div class="ham-menu" aria-label="Toggle navigation">
-        <span></span>
-        <span></span>
-        <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
 
-
-    
     <!-- Main-->
     <main>
-        <article> 
-            <a href="/stiri-set/stire-set.html" class="prima-stire" >
-                <img id="prima-imagine" src="resurse/avion.jpg" alt="Avion F-35" >
-                <h1 id="primul-text">România și SUA au semnat protocolul privind achiziția a 32 de avioane de luptă „invizibile” F-35</h1>
-            </a>
-        </article>
+      <article>
+        <a href="/stiri-set/stire-set.html" class="prima-stire">
+          <img id="prima-imagine" src="resurse/avion.jpg" alt="Avion F-35" />
+          <h1 id="primul-text">
+            România și SUA au semnat protocolul privind achiziția a 32 de
+            avioane de luptă „invizibile” F-35
+          </h1>
+        </a>
+      </article>
+    </main>
 
-        
-
-        <!-- Aside [API'S in the future?] -->
-        <aside>
-            <h2 id="ultima-ora">Stiri de ultima ora</h2>
-            <article> 
-                <a href="">
-                    <img src="/resurse/vremea.png" alt="vremea">
-                    <h3>Vremea astazi</h3>
-                </a>
-            </article>
-                
-            <article>
-                <a href="">
-                    <img src="resurse/curs-valutar.png" alt="curs valutar">
-                    <h3>Curs valuta 1EUR = 4.98RON</h3>
-                </a>
-            </article>
-        </aside>
-    </main> <hr>  
-
-    
-
-
-     <!-- Sectiunea stiri -->
+    <!-- Sectiunea stiri -->
     <header>
-        <a href="stiri/stiri.html">Stiri actuale</a>
+      <a href="stiri/stiri.html">Stiri actuale</a>
     </header>
 
     <section class="stiri-grid">
-        <article class="stiri-item">
-            <a href="" class="stiri-text">
-                <img src="resurse/fluor.jpg" alt="apa in fluor"> 
-                <p>Adevărul despre fluorul din apă, sare și pasta de dinți</p>
-            </a>
-        </article>
+      <article class="stiri-item">
+        <a href="" class="stiri-text">
+          <img src="resurse/fluor.jpg" alt="apa in fluor" />
+          <p>Adevărul despre fluorul din apă, sare și pasta de dinți</p>
+        </a>
+      </article>
 
-        <article class="stiri-item">
-            <a href="" class="stiri-text">
-                <img src="resurse/avalansa.jpg" alt="avalansa">
-                <p>Pericol de avalanșe la înălțimi mari. Avertismentul salvamontiştilor</p>
-            </a>
-        </article>
+      <article class="stiri-item">
+        <a href="" class="stiri-text">
+          <img src="resurse/avalansa.jpg" alt="avalansa" />
+          <p>
+            Pericol de avalanșe la înălțimi mari. Avertismentul salvamontiştilor
+          </p>
+        </a>
+      </article>
 
-        <article class="stiri-item">
-            <a href="" class="stiri-text">
-                <img src="resurse/nita.jpg" alt="Florin Niță ">
-                <p>Diagnosticul primit Florin Niță după accidentarea de la meciul din Cipru</p>
-            </a>
-        </article>
-    </section> <hr>
-    
-
-
-    <!-- Sectiunea articole -->
+      <article class="stiri-item">
+        <a href="" class="stiri-text">
+          <img src="resurse/nita.jpg" alt="Florin Niță " />
+          <p>
+            Diagnosticul primit Florin Niță după accidentarea de la meciul din
+            Cipru
+          </p>
+        </a>
+      </article>
+    </section>
+    <hr <!-- Sectiunea articole -- />
     <header id="articole">
-        <a href="articole/articole.html">Articole</a>
+      <a href="articole/articole.html">Articole</a>
     </header>
-
 
     <section class="articole-grid">
-        <article class="articole-item">
-            <a href="">
-                <img src="resurse/cernobil.jpg" alt="cernobil">
-                <p>Viața la Cernobîl după 32 de ani de la dezastrul nuclear: cum arată în prezent orașul-fantomă</p>
-            </a>
-        </article>
+      <article class="articole-item">
+        <a href="">
+          <img src="resurse/cernobil.jpg" alt="cernobil" />
+          <p>
+            Viața la Cernobîl după 32 de ani de la dezastrul nuclear: cum arată
+            în prezent orașul-fantomă
+          </p>
+        </a>
+      </article>
 
-        <article class="articole-item">
-            <a href="">
-                <img src="resurse/ferma.jpeg" alt="ferma">
-                <p>Ferma de oi și capre de 150 mii de euro. Istoria lui Vasile, care a lăsat strainatatea și a revenit in tara</p>
-            </a>
-        </article>  
+      <article class="articole-item">
+        <a href="">
+          <img src="resurse/ferma.jpeg" alt="ferma" />
+          <p>
+            Ferma de oi și capre de 150 mii de euro. Istoria lui Vasile, care a
+            lăsat strainatatea și a revenit in tara
+          </p>
+        </a>
+      </article>
 
-        <article class="articole-item">
-            <a href="">
-                <img src="resurse/witcher.png" alt="the witcher">
-                <p>The Witcher 4 a intrat în producție completă și este cu un pas mai aproape de lansare</p>
-            </a>
-        </article>  
-    </section> <hr>
-
-
-    
-
-    <!-- Sectiunea emisiuni -->
-    <header id="emisiuni">
-        <a href="emisiuni/emisiuni.html">Emisiuni</a>
-    </header>
-
-
-    <section class="emisiuni-grid">
-        <article class="emisiuni-item">
-            <a href="/emisiuni/master-chef/masterChef.html" class="emisiuni-text">
-                <img src="resurse/masterChef.jpg" alt="master chef"> 
-                <p>Master Chef</p>
-            </a>
-        </article>
-
-        <article class="emisiuni-item">
-            <a href="/emisiuni/las-fierbinti/lasFierbinti.html" class="emisiuni-text">
-                <img src="resurse/lasFierbinti.png" alt="las fierbinti">
-                <p>Las Fierbinti</p>
-            </a>
-        </article>
-
-        <article class="emisiuni-item">
-            <a href="emisiuni/iLike-it/iLikeIT.html" class="emisiuni-text">
-                <img src="resurse/iLikeIT.jpg" alt="i like it">
-                <p>I Like IT</p>
-            </a>
-        </article>
-
-        <article class="emisiuni-item">
-            <a href="emisiuni/imperiul-leilor/imperiulLeilor.html" class="emisiuni-text">
-                <img src="resurse/imperiulLeilor.jpg" alt="imperiul leilor">
-                <p>Imperiul Leilor</p>
-            </a>
-        </article>
+      <article class="articole-item">
+        <a href="">
+          <img src="resurse/witcher.png" alt="the witcher" />
+          <p>
+            The Witcher 4 a intrat în producție completă și este cu un pas mai
+            aproape de lansare
+          </p>
+        </a>
+      </article>
     </section>
+    <hr />
 
 
-    
 
     <!-- Footer -->
     <footer>
+      <section class="footer-content">
+        <figure class="footer-logo">
+          <img src="logo.png" alt="RO TV Logo" />
+        </figure>
+        <nav class="footer-links">
+          <ul>
+            <li><a href="despre/despre.html">Despre</a></li>
+            <li><a href="contact/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
 
-
-        <section class="footer-content">
-            <figure class="footer-logo">
-                <img src="logo.png" alt="RO TV Logo">
-            </figure>
-            <nav class="footer-links">
-                <ul>
-                    <li><a href="despre/despre.html">Despre</a></li>
-                    <li><a href="contact/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </section>
-
-
-
-        <!-- <section class="footer-drepturi">
+      <!-- <section class="footer-drepturi">
             <p>© 2025 RO TV. Toate drepturile rezervate.</p>
         </section> -->
     </footer>
-    
-    
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
