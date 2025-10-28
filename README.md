@@ -1,42 +1,46 @@
-# 📺 ROTV LIVE – Online Television Platform [working on it]
+# 🐍 CobraNEWS
 
-I created a website designed and developed for an online television platform called **ROTV LIVE**, allowing users to stay connected with live TV streams, current news, and subscription features.  
-
-<img src="https://github.com/user-attachments/assets/05356675-2c77-4d8b-8608-7488829436ba" style="width: 10%;">  
-
+**CobraNEWS** is a modern, fully responsive **news website** built with **HTML, CSS, and JavaScript**.  
+It features a sleek design, **Dark/Light mode**, and a dynamic navigation layout optimized for all screen sizes.  
+The project was developed using **Git + GitHub** for version control and emphasizes accessibility, clarity, and scalability.
 
 ---
 
-## ✨ Features
+## 🚀 Live Preview
+👉 *[Add your live link here, e.g., GitHub Pages link]*  
 
-- 🎥 **Live TV streaming preview** section
-- 📰 **News carousel** with scrollable headlines
-- 📱 **Responsive layout** for mobile, tablet, and desktop
-- 💡 **Subscription aside box** (hidden on smaller screens)
-- 🎨 Custom design system using Figma
-- ⚡ Lazy-loaded images for performance
+---
+
+## 📰 Features
+
+- 📱 **Responsive Design** — adapts seamlessly to desktop, tablet, and mobile  
+- 🌗 **Dark / Light Mode** toggle for a personalized experience  
+- 🧭 **Dynamic Navigation** with a modern layout  
+- 🧩 **Modular Structure** and clean, reusable code  
+- 📰 **Structured Content Sections** for an intuitive reading flow  
+- 🧠 **Version Control** through Git & GitHub  
 
 ---
 
 ## 🛠️ Technologies Used
 
-| Category     | Tech                     |
-|--------------|--------------------------|
-| Design       | Figma                    |
-| Markup       | HTML5                    |
-| Styling      | CSS3, Flexbox, Grid      |
-| Responsiveness | Media Queries           |
-| Accessibility| ARIA labels, alt text    |
+| Technology | Purpose |
+|-------------|----------|
+| **HTML5** | Page structure |
+| **CSS3 (Flexbox & Grid)** | Responsive and modern styling |
+| **JavaScript (ES6)** | Interactivity and theme switching |
+| **Git & GitHub** | Version control and collaboration |
+
+---
+## 🌆 Screenshots
+
+### 🖥️ Desktop View  
+<img src="https://github.com/user-attachments/assets/e0dafdd7-5e5c-4b67-86b0-a9cefad8073e" width="70%">
+<img width="1902" height="905" alt="Screenshot 2025-10-28 145017" src="https://github.com/user-attachments/assets/e0dafdd7-5e5c-4b67-86b0-a9cefad8073e" />
+
+### 📱 Mobile View  
+<img src="https://github.com/user-attachments/assets/1ac567ba-8400-4a60-a88f-73b9ac1c5814" width="30%">
+<img width="597" height="801" alt="Screenshot 2025-10-28 173648" src="https://github.com/user-attachments/assets/1ac567ba-8400-4a60-a88f-73b9ac1c5814" />
 
 ---
 
-## 🖼️ Screenshots
-
-<img src="https://github.com/user-attachments/assets/e7d116e4-d1cf-4a14-b7d4-6ce699504767" style="width: 30%;">
-<img src="https://github.com/user-attachments/assets/d0741cdf-e636-42bb-a27c-d8dfbee3c942" style="width: 30%;">  
-<img src="https://github.com/user-attachments/assets/831fe7f6-60e5-4a97-a61d-22767a6db05a" style="width: 30%;">  
-<img src="https://github.com/user-attachments/assets/96145612-85f3-4e77-bad2-907f199c20e3" style="width: 30%;">  
-<img src="https://github.com/user-attachments/assets/3c771fb6-ecf6-4531-88c7-4afe57328223" style="width: 30%;">  
-
-
----
