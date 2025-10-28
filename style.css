@@ -5,14 +5,19 @@ body {
 }
 
 #logo {
-  height: 100px; /* mărește logo-ul */
+  height: 70px; /* mărește logo-ul */
   width: auto;
-  transition: filter 0.2s ease-in-out;
-  /* Asigură-te că nav are align-items: center și logo-ul nu are margin/padding extra */
+  height: 110px; /* mărește logo-ul */
+  max-width: 320px;
+  transition: filter 0.2s ease-in-out, box-shadow 0.22s cubic-bezier(0.4, 0, 0.2, 1);
+  /* Glow similar cu footer */
+  filter: drop-shadow(0 4px 24px #fff9);
+  box-shadow: 0 0 0 0 transparent;
 }
 
 #logo:hover {
-  filter: brightness(1.2);
+  filter: brightness(1.2) drop-shadow(0 6px 32px #ffeb3b88);
+  box-shadow: 0 0 0 0 transparent;
 }
 
 /* ---NAVIGATION BAR--- */
@@ -22,7 +27,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   background: linear-gradient(120deg, #19074d 0%, #232599 100%);
-  height: 80px;
+  height: 90px;
   padding: 0 60px;
   flex-wrap: wrap;
   box-shadow: 0 4px 24px 0 rgba(25, 7, 77, 0.13);
@@ -187,13 +192,13 @@ main {
   justify-content: flex-start;
   gap: 56px;
   padding: 56px 32px 0 32px;
-  background: linear-gradient(120deg, #f6f7fb 60%, #e3e6fa 100%);
+  /* background: linear-gradient(120deg, #f6f7fb 60%, #e3e6fa 100%); */
   border-radius: 40px;
-  box-shadow: 0 8px 40px 0 rgba(25, 7, 77, 0.11),
-    0 1.5px 8px 0 rgba(35, 37, 153, 0.07);
+  /* box-shadow: 0 8px 40px 0 rgba(25, 7, 77, 0.11),
+    0 1.5px 8px 0 rgba(35, 37, 153, 0.07); */
   position: relative;
   z-index: 1;
-  min-height: 480px;
+  min-height: 380px;
   max-width: 1280px;
   margin: 0 auto;
   overflow: visible;
@@ -262,15 +267,15 @@ main {
   min-height: 320px;
   line-height: 1.28;
   z-index: 2;
-  background: linear-gradient(
+  /* background: linear-gradient(
     120deg,
     rgba(255, 255, 255, 0.98) 60%,
     rgba(240, 240, 255, 0.93) 100%
-  );
+  ); */
   backdrop-filter: blur(18px) saturate(160%);
   -webkit-backdrop-filter: blur(18px) saturate(160%);
   border-radius: 0 32px 32px 0;
-  box-shadow: 0 4px 24px 0 rgba(80, 60, 120, 0.11);
+  /* box-shadow: 0 4px 24px 0 rgba(80, 60, 120, 0.11); */
   box-sizing: border-box;
   padding: 40px 36px 36px 36px;
   text-align: left;
@@ -348,7 +353,7 @@ main {
     width: 100%;
     min-width: 0;
     height: auto;
-    line-height: 1.5;
+    line-height: 2;
     text-align: center;
     border-radius: 0 0 18px 18px;
     padding: 16px 8px 16px 8px;
@@ -898,6 +903,8 @@ footer::before {
     gap: 32px;
   }
 }
+
+
 @media (max-width: 900px) {
   .footer-content {
     flex-direction: column;
