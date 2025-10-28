@@ -7,7 +7,7 @@ The project was developed using **Git + GitHub** for version control and emphasi
 ---
 
 ## 🚀 Live Preview
-👉 *[Add your live link here, e.g., GitHub Pages link]*  
+👉 *[https://andreilupau.github.io/News-Website-CobraNEWS/]*  
 
 ---
 
