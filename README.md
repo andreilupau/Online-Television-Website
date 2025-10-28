@@ -4,6 +4,8 @@
 It features a sleek design, **Dark/Light mode**, and a dynamic navigation layout optimized for all screen sizes.  
 The project was developed using **Git + GitHub** for version control and emphasizes accessibility, clarity, and scalability.
 
+<img src="https://github.com/user-attachments/assets/3deea075-c2db-4bfd-b379-abd8479425fa" width="50%">
+
 ---
 
 ## 🚀 Live Preview
