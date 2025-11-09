@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.textContent = isDark ? "☀️" : "🌙";
     btn.setAttribute(
       "aria-label",
-      isDark ? "Comută modul luminos" : "Comută modul întunecat"
+      isDark ? "Toggle light mode" : "Toggle dark mode"
     );
   };
 
