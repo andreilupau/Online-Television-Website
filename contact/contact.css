@@ -18,34 +18,7 @@ body {
   color: #1a1850;
 }
 
-/* NAV */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 12px 36px;
-  background: linear-gradient(120deg, var(--accent) 0%, var(--accent-2) 100%);
-  color: #fff;
-}
-nav a#logo,
-nav img#logo {
-  height: 70px;
-}
-nav ul {
-  display: flex;
-  gap: 18px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: 700;
-}
-nav a.active {
-  color: #ffeb3b;
-}
+/* Inherit global nav/footer styles from style.css (removed destructive reset) */
 
 /* Page main layout */
 .contact-main {
@@ -114,6 +87,32 @@ nav a.active {
   gap: 12px;
   justify-content: flex-start;
   margin-top: 12px;
+}
+.form-status {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: #1a1850;
+}
+.form-status.success {
+  color: #1b5e20;
+  background: #e8f5e9;
+  border: 1px solid #a5d6a7;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+.form-status.error {
+  color: #b71c1c;
+  background: #ffebee;
+  border: 1px solid #ef9a9a;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+.form-status.info {
+  color: #0d47a1;
+  background: #e3f2fd;
+  border: 1px solid #90caf9;
+  padding: 8px 12px;
+  border-radius: 10px;
 }
 .btn-primary {
   background: linear-gradient(90deg, #ffeb3b, #ffd54a);
@@ -234,49 +233,7 @@ nav a.active {
   }
 }
 
-/* Footer */
-footer {
-  margin-top: 48px;
-}
-.footer-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 20px;
-  padding: 30px;
-  background: linear-gradient(120deg, var(--accent-2) 0%, var(--accent) 100%);
-  color: #fff;
-  border-radius: 20px 20px 12px 12px;
-}
-.footer-logo img {
-  width: 140px;
-}
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-  display: inline-block;
-  padding: 6px 0;
-}
-.footer-links a:hover {
-  color: #ffeb3b;
-  text-decoration: underline;
-}
-.footer-drepturi {
-  background: linear-gradient(90deg, #232599, #19074d);
-  text-align: center;
-  padding: 12px;
-  color: #ffeb3b;
-  margin-top: 8px;
-  border-radius: 0 0 12px 12px;
-}
+/* Footer: allow global styles; no local reset */
 
 /* Responsive */
 @media (max-width: 900px) {
@@ -347,6 +304,30 @@ body.dark .contact-form textarea {
   border-color: #2d3166;
 }
 body.dark .contact-form input:focus,
+body.dark .contact-form textarea:focus {
+  outline: 2px solid #ffeb3b55;
+}
+body.dark .map-placeholder {
+  background: linear-gradient(120deg, #1c1f33, #141627);
+  color: #889;
+  border: 1px dashed #2d3166;
+}
+/* Status messages in dark mode */
+body.dark .form-status.success {
+  background: rgba(33, 150, 83, 0.18);
+  border-color: #66bb6a;
+  color: #c8e6c9;
+}
+body.dark .form-status.error {
+  background: rgba(183, 28, 28, 0.18);
+  border-color: #ef9a9a;
+  color: #ffcdd2;
+}
+body.dark .form-status.info {
+  background: rgba(13, 71, 161, 0.18);
+  border-color: #90caf9;
+  color: #bbdefb;
+}
 /* Improve paragraph readability in dark mode */
 body.dark .contact-hero p,
 body.dark .contact-main p,
@@ -357,34 +338,26 @@ body.dark .contact-info p {
 body.dark .contact-info a {
   color: #ffeb72;
 }
-body.dark .contact-form textarea:focus {
-  outline: 2px solid #ffeb3b55;
-}
-body.dark .map-placeholder {
-  background: linear-gradient(120deg, #1c1f33, #141627);
-  color: #889;
-  body.dark .contact-form input::placeholder,
-  body.dark .contact-form textarea::placeholder {
-    color: #a7abd8;
-  }
-  border: 1px dashed #2d3166;
+body.dark .contact-form input::placeholder,
+body.dark .contact-form textarea::placeholder {
+  color: #a7abd8;
 }
 body.dark footer .footer-content {
   background: linear-gradient(120deg, #11144a 0%, #0d0f2a 100%);
 }
 body.dark .footer-drepturi {
   background: linear-gradient(90deg, #11144a, #0d0f2a);
-  /* Reset button visibility in dark mode */
-  body.dark .btn-ghost {
-    background: transparent;
-    border: 2px solid #ffeb3b; /* highly visible in dark */
-    color: #ffeb3b;
-  }
-  body.dark .btn-ghost:hover,
-  body.dark .btn-ghost:focus {
-    background: rgba(255, 235, 59, 0.18);
-    border-color: #ffeb3b;
-    color: #fff;
-  }
   color: #ffeb3b;
+}
+/* Reset button visibility in dark mode */
+body.dark .btn-ghost {
+  background: transparent;
+  border: 2px solid #ffeb3b;
+  color: #ffeb3b;
+}
+body.dark .btn-ghost:hover,
+body.dark .btn-ghost:focus {
+  background: rgba(255, 235, 59, 0.18);
+  border-color: #ffeb3b;
+  color: #fff;
 }

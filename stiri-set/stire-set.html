@@ -1,95 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stire</title>
-    <link rel="stylesheet" href="../stiri-set/stire-set.css">
-    <link rel="icon" type="image/x-icon" href="../logo.png">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    <!-- Global shared styles for nav, cards, dark mode -->
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../stiri-set/stire-set.css" />
+    <link rel="icon" type="image/x-icon" href="../logo.png" />
+  </head>
+  <body>
+    <!-- Navigation -->
 
-    <!-- Meniu Navigatie -->
+    <nav aria-label="Main menu">
+      <a href="../index.html" aria-label="Home page">
+        <img id="logo" src="../logo.png" alt="CobraNEWS logo" />
+      </a>
 
-    <nav aria-label="Meniu principal">
-        <a href="../index.html" aria-label="Pagina principală">
-            <img id="logo" src="../logo.png" alt="logo ROTV">
-        </a>
-                
-        <ul class="nav-left">
-            <li><a href="/live/live.html">Live</a></li>
-            <li><a href="/stiri/stiri.html">Stiri</a></li>
-            <li><a href="/articole/articole.html">Articole</a></li>
-            <li><a href="/emisiuni/emisiuni.html">Emisiuni</a></li>
-        </ul>
-        <ul class="nav-right">
-            <li><a href="/despre/despre.html" >Despre noi</a></li>
-            <li><a href="/contact/contact.html" >Contact</a></li>
-        </ul>    
-    </nav> 
-
+      <ul class="nav-left">
+        <li><a href="/live/live.html">Live</a></li>
+        <li><a href="/stiri/stiri.html">News</a></li>
+        <li><a href="/articole/articole.html">Articles</a></li>
+        <li><a href="/emisiuni/emisiuni.html">Shows</a></li>
+      </ul>
+      <ul class="nav-right">
+        <li><a href="/despre/despre.html">About us</a></li>
+        <li><a href="/contact/contact.html">Contact➣</a></li>
+        <li>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+            title="Dark/Light mode"
+          >
+            🌙
+          </button>
+        </li>
+      </ul>
+    </nav>
 
     <header>
-        <h1>România și SUA au semnat protocolul privind achiziția a 32 de avioane de luptă „invizibile” F-35</h1>
-        <p>„Astăzi, România face un pas important în consolidarea securităţii sale şi în întărirea  parteneriatelor internaţionale..”</p>
+      <h1>
+        Romania and the U.S. signed the protocol to purchase 32 "invisible" F-35
+        fighter jets
+      </h1>
+      <p>
+        "Today, Romania is taking an important step in strengthening its
+        security and reinforcing international partnerships."
+      </p>
     </header>
 
-
     <main>
-        <img src="../resurse/avion.jpg" alt="avion">
+      <img src="../resurse/avion.jpg" alt="fighter jet" />
 
-        <aside>
-            <h2>ROTV STIRI</h2>
-            <p>Stai la curent cu cele mai noi stiri, direct la tine in email.</p>
-            <button>Aboneaza-te</button>
-        </aside>    
-    </main> <hr>
+      <aside>
+        <h2>CobraNEWS</h2>
+        <p>Stay up to date with the latest news, straight to your inbox.</p>
+        <button>Subscribe</button>
+      </aside>
+    </main>
+    <hr />
 
     <article>
-        <p>România și Statele Unite ale Americii au semnat joi protocolul privind lansarea programului de  tranziţie a Forţelor Aeriene Române către aeronave de generaţia a V-a,  F-35. Țara noastră va cumpăra prin acest program 32 de avioane de luptă  F-35, cele mai performante din lume, împreună cu armamentul aferent. </p>
-    
-        <p>Legea care facilitează această achiziție a fost promulgată de  președintele Klaus Iohannis în urmă cu mai puțin de o săptămână.  Documentul a fost semnat de ministrul Apărării, Angel Tîlvăr, şi  ambasadoarea SUA la Bucureşti, Kathleen Kavalec.</p>
-        
-        
-    </article>
+      <p>
+        România și Statele Unite ale Americii au semnat joi protocolul privind
+        lansarea programului de tranziţie a Forţelor Aeriene Române către
+        aeronave de generaţia a V-a, F-35. Țara noastră va cumpăra prin acest
+        program 32 de avioane de luptă F-35, cele mai performante din lume,
+        împreună cu armamentul aferent.
+      </p>
 
+      <p>
+        Legea care facilitează această achiziție a fost promulgată de
+        președintele Klaus Iohannis în urmă cu mai puțin de o săptămână.
+        Documentul a fost semnat de ministrul Apărării, Angel Tîlvăr, şi
+        ambasadoarea SUA la Bucureşti, Kathleen Kavalec.
+      </p>
+    </article>
 
     <!-- Footer -->
 
     <footer>
-        <section class="footer-content">
+      <section class="footer-content">
+        <figure class="footer-logo">
+          <img src="../logo.png" alt="CobraNEWS logo" />
+        </figure>
+        <nav class="footer-links">
+          <ul>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
 
-            <figure class="footer-logo">
-                <img src="../logo.png" alt="RO TV Logo">
-            </figure>
-            <nav class="footer-links">
-                <ul>
-                    <li><a href="#">Termeni și Condiții</a></li>
-                    <li><a href="#">Politica de Confidențialitate</a></li>
-                    <li><a href="#">Despre noi</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+        <address class="footer-contact">
+          <p>
+            Email:
+            <a href="mailto:lupauandrei27@gmail.com">lupauandrei27@gmail.com</a>
+          </p>
+          <p>Phone: <a href="tel:+40123456789">+40 123 456 789</a></p>
+        </address>
 
-            <address class="footer-contact">
-                <p>Email: <a href="mailto:lupauandrei27@gmail.com">lupauandrei27@gmail.com</a></p>
-                <p>Telefon: <a href="tel:+40123456789">+40 123 456 789</a></p>
-            </address>
-
-            <section class="footer-social">
-                <a href="#"><img src="../resurse/facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="../resurse/insta-icon.png" alt="Instagram"></a>
-                <a href="#"><img src="../resurse/twiiter-icon.png" alt="Twitter"></a>
-            </section>
-
+        <section class="footer-social">
+          <a href="#"
+            ><img src="../resurse/facebook-icon.png" alt="Facebook"
+          /></a>
+          <a href="#"
+            ><img src="../resurse/insta-icon.png" alt="Instagram"
+          /></a>
+          <a href="#"
+            ><img src="../resurse/twiiter-icon.png" alt="Twitter/X"
+          /></a>
         </section>
+      </section>
 
-        <section class="footer-drepturi">
-            <p>© 2025 RO TV. Toate drepturile rezervate.</p>
-        </section>
+      <section class="footer-drepturi">
+        <p>© 2025 CobraNEWS. All rights reserved.</p>
+      </section>
     </footer>
-
-
-</body>
+    <script src="../script.js"></script>
+  </body>
 </html>

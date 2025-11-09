@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Global styles to match homepage nav/footer -->
+    <link rel="stylesheet" href="../style.css" />
+    <!-- Page-specific styles -->
     <link rel="stylesheet" href="contact.css" />
     <link rel="icon" type="image/x-icon" href="../logo.png" />
     <title>Contact - CobraNEWS</title>
@@ -10,19 +13,23 @@
   <body>
     <!-- Navigation -->
     <nav aria-label="Main menu">
-      <a href="../index.html" aria-label="Home">
+      <a href="../index.html" aria-label="Home page">
         <img id="logo" src="../logo.png" alt="CobraNEWS logo" />
       </a>
-
       <ul class="nav-left">
-        <li><a href="/stiri/stiri.html">News</a></li>
-
+        <li><a href="/stiri/stiri.html">News➣</a></li>
       </ul>
-
       <ul class="nav-right">
-        <li><a href="/contact/contact.html" class="active">Contact</a></li>
+        <li><a href="/contact/contact.html" class="active">Contact➣</a></li>
         <li>
-          <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode" title="Dark/Light mode">🌙</button>
+          <button
+            id="theme-toggle"
+            class="theme-toggle"
+            aria-label="Toggle dark mode"
+            title="Dark/Light mode"
+          >
+            🌙
+          </button>
         </li>
       </ul>
     </nav>
@@ -38,7 +45,18 @@
       </section>
 
       <section class="contact-grid">
-        <form class="contact-form" novalidate>
+        <form
+          id="contact-form"
+          class="contact-form"
+          method="POST"
+          novalidate
+          data-endpoint="https://formspree.io/f/REPLACE_FORM_ID"
+        >
+          <input
+            type="hidden"
+            name="_subject"
+            value="New message from CobraNEWS contact form"
+          />
           <label>
             Name
             <input
@@ -76,6 +94,12 @@
           <div class="actions">
             <button type="submit" class="btn-primary">Send</button>
           </div>
+          <p
+            id="form-status"
+            class="form-status"
+            role="status"
+            aria-live="polite"
+          ></p>
         </form>
 
         <aside class="contact-info">
@@ -107,20 +131,15 @@
     <footer>
       <section class="footer-content">
         <figure class="footer-logo">
-          <img src="../logo_simple.png" alt="CobraNEWS logo" />
+          <img src="../logo.png" alt="CobraNEWS logo" />
         </figure>
-
-
-        <address class="footer-contact">
-          <p>
-            Email:
-            <a href="mailto:lupauandrei27@gmail.com">lupauandrei27@gmail.com</a>
-          </p>
-          <p>Address: Oradea, Romania</p>
-        </address>
+        <nav class="footer-links">
+          <ul>
+            <li><a href="/contact/contact.html">Contact</a></li>
+          </ul>
+        </nav>
       </section>
-
-
+    </footer>
 
     <script src="../script.js"></script>
   </body>
