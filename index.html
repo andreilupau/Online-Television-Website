@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/x-icon" href="logo.png" />
+    <link rel="icon" type="image/x-icon" href="logo_simple.png" />
     <title>CobraNEWS - Welcome</title>
   </head>
   <body>
     <!-- NAVIGATION BAR -->
-    <nav aria-label="Main menu">
+    <nav class="nav-compact" aria-label="Main menu">
       <a href="index.html" aria-label="Home page">
-        <img id="logo" src="logo.png" alt="CobraNEWS logo" />
+        <img id="logo" src="logo_simple.png" alt="CobraNEWS logo" />
       </a>
 
       <ul class="nav-left">
@@ -19,6 +19,7 @@
       </ul>
       <ul class="nav-right">
         <li><a href="contact/contact.html">Contact➣</a></li>
+
         <!-- Dark mode toggle button (right corner) -->
         <li>
           <button
@@ -32,13 +33,6 @@
         </li>
       </ul>
     </nav>
-
-    <!-- Add hamburger menu button -->
-    <div class="ham-menu" aria-label="Toggle navigation">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
 
     <!-- Main-->
     <main>
@@ -136,14 +130,30 @@
         </figure>
         <nav class="footer-links">
           <ul>
-            <li><a href="contact/contact.html">Contact</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
+
+        <address class="footer-contact">
+          <p>
+            Email:
+            <a href="mailto:lupauandrei27@gmail.com">lupauandrei27@gmail.com</a>
+          </p>
+        </address>
+
+        <section class="footer-social">
+          <a href="#"><img src="../resurse/facebook-logo" alt="Facebook" /></a>
+          <a href="#"><img src="resurse/insta-icon.png" alt="Instagram" /></a>
+          <a href="#"><img src="resurse/x-logo.png" alt="Twitter/X" /></a>
+        </section>
       </section>
-      <!-- Rights (uncomment if needed)
+
+      <!-- RIGHTS (not real ofc) -->
       <section class="footer-drepturi">
         <p>© 2025 CobraNEWS. All rights reserved.</p>
-      </section> -->
+      </section>
     </footer>
 
     <script src="script.js"></script>
