@@ -14,13 +14,10 @@
         <img id="logo" src="logo_simple.png" alt="CobraNEWS logo" />
       </a>
 
-      <ul class="nav-left">
-        <li><a href="stiri/stiri.html">News➣</a></li>
-      </ul>
-      <ul class="nav-right">
-        <li><a href="contact/contact.html">Contact➣</a></li>
-
-        <!-- Dark mode toggle button (right corner) -->
+      <ul>
+        <li><a href="stiri/stiri.html">News</a></li>
+        <li><a href="contact/contact.html">Contact</a></li>
+        <!-- Dark mode toggle button -->
         <li>
           <button
             id="theme-toggle"
@@ -58,7 +55,7 @@
 
     <section class="stiri-grid">
       <article class="stiri-item">
-        <a href="" class="stiri-text">
+        <a href="stiri-set/stire-fluor.html" class="stiri-text">
           <img src="resurse/fluor.jpg" alt="fluoride in water" />
           <p>
             The truth about fluoride in water, salt and toothpaste, explained
@@ -67,14 +64,14 @@
       </article>
 
       <article class="stiri-item">
-        <a href="" class="stiri-text">
+        <a href="stiri-set/stire-avalansa.html" class="stiri-text">
           <img src="resurse/avalansa.jpg" alt="avalanche" />
           <p>Avalanche danger at high altitudes. Mountain rescuers warn</p>
         </a>
       </article>
 
       <article class="stiri-item">
-        <a href="" class="stiri-text">
+        <a href="stiri-set/stire-nita.html" class="stiri-text">
           <img src="resurse/nita.jpg" alt="Florin Niță" />
           <p>
             The diagnosis Florin Niță received after the injury in the match in
@@ -91,7 +88,7 @@
 
     <section class="articole-grid">
       <article class="articole-item">
-        <a href="">
+        <a href="stiri-set/articol-cernobil.html">
           <img src="resurse/cernobil.jpg" alt="Chernobyl" />
           <p>
             Life in Chernobyl 32 years after the nuclear disaster: what the
@@ -101,7 +98,7 @@
       </article>
 
       <article class="articole-item">
-        <a href="">
+        <a href="stiri-set/articol-ferma.html">
           <img src="resurse/ferma.jpeg" alt="farm" />
           <p>
             The €150k sheep and goat farm. Vasile's story of leaving abroad and
@@ -111,7 +108,7 @@
       </article>
 
       <article class="articole-item">
-        <a href="">
+        <a href="stiri-set/articol-witcher4.html">
           <img src="resurse/witcher.png" alt="The Witcher" />
           <p>
             The Witcher 4 has entered full production and is one step closer to
@@ -123,39 +120,19 @@
     <hr />
 
     <!-- Footer -->
-    <footer>
-      <section class="footer-content">
-        <figure class="footer-logo">
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <a href="index.html" class="footer-brand" aria-label="Go to top/Home">
           <img src="logo.png" alt="CobraNEWS logo" />
-        </figure>
-        <nav class="footer-links">
-          <ul>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="contact/contact.html">Contact</a>
         </nav>
-
-        <address class="footer-contact">
-          <p>
-            Email:
-            <a href="mailto:lupauandrei27@gmail.com">lupauandrei27@gmail.com</a>
-          </p>
-        </address>
-
-        <section class="footer-social">
-          <a href="#"><img src="../resurse/facebook-logo" alt="Facebook" /></a>
-          <a href="#"><img src="resurse/insta-icon.png" alt="Instagram" /></a>
-          <a href="#"><img src="resurse/x-logo.png" alt="Twitter/X" /></a>
-        </section>
-      </section>
-
-      <!-- RIGHTS (not real ofc) -->
-      <section class="footer-drepturi">
-        <p>© 2025 CobraNEWS. All rights reserved.</p>
-      </section>
+      </div>
+      <div class="footer-copy">© 2025 CobraNEWS. All rights reserved.</div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>

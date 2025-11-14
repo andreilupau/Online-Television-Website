@@ -16,11 +16,9 @@
       <a href="../index.html" aria-label="Home page">
         <img id="logo" src="../logo_simple.png" alt="CobraNEWS logo" />
       </a>
-      <ul class="nav-left">
-        <li><a href="/stiri/stiri.html">News➣</a></li>
-      </ul>
-      <ul class="nav-right">
-        <li><a href="/contact/contact.html" class="active">Contact➣</a></li>
+      <ul>
+        <li><a href="/stiri/stiri.html">News</a></li>
+        <li><a href="/contact/contact.html" class="active">Contact</a></li>
         <li>
           <button
             id="theme-toggle"
@@ -128,17 +126,22 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-      <section class="footer-content">
-        <figure class="footer-logo">
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <a
+          href="../index.html"
+          class="footer-brand"
+          aria-label="Go to top/Home"
+        >
           <img src="../logo.png" alt="CobraNEWS logo" />
-        </figure>
-        <nav class="footer-links">
-          <ul>
-            <li><a href="/contact/contact.html">Contact</a></li>
-          </ul>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="/contact/contact.html" class="active">Contact</a>
         </nav>
-      </section>
+      </div>
+      <div class="footer-copy">© 2025 CobraNEWS. All rights reserved.</div>
     </footer>
 
     <script src="../script.js"></script>

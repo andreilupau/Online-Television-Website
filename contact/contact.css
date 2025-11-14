@@ -3,6 +3,7 @@
 /* Use global variables from style.css; keep only page-local ones if needed */
 :root {
   --card-bg: rgba(255, 255, 255, 0.96);
+  --check-color: #232599; /* color for checkbox tick */
 }
 
 * {
@@ -130,18 +131,18 @@ body {
     transform 0.08s ease;
 }
 .contact-form .consent input[type="checkbox"]::after {
-  /* checkmark */
   content: "";
   position: absolute;
-  left: 4px;
+  left: 5px;
   top: 1px;
   width: 6px;
-  height: 10px;
-  border: solid var(--accent); /* dark accent for strong contrast on yellow */
-  border-width: 0 3px 3px 0; /* slightly thicker for visibility */
+  height: 12px;
+  border: solid var(--check-color);
+  border-width: 0 3px 3px 0;
   transform: rotate(45deg) scale(0);
   transform-origin: center;
-  transition: transform 0.12s ease;
+  transition: transform 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
 }
 .contact-form .consent input[type="checkbox"]:checked {
   background: linear-gradient(90deg, #ffeb3b, #ffd54a);
@@ -149,6 +150,25 @@ body {
 }
 .contact-form .consent input[type="checkbox"]:checked::after {
   transform: rotate(45deg) scale(1);
+}
+.contact-form .consent input[type="checkbox"]:focus-visible {
+  outline: 2px solid #ffeb3bcc;
+  outline-offset: 2px;
+}
+.contact-form .consent input[type="checkbox"]:active {
+  transform: scale(0.92);
+}
+/* Dark mode checkbox tick contrast */
+body.dark .contact-form .consent input[type="checkbox"] {
+  background: #1c1f33;
+  border-color: #2d3166;
+}
+body.dark .contact-form .consent input[type="checkbox"]:checked {
+  background: linear-gradient(90deg, #ffeb3b, #ffd54a);
+  border-color: #ffeb3b;
+}
+body.dark .contact-form .consent input[type="checkbox"]::after {
+  border-color: #11144a; /* darker tick for contrast on light checked background */
 }
 
 /* Ensure the checkbox aligns nicely on small screens */
@@ -202,6 +222,15 @@ body {
   }
   nav {
     padding: 12px;
+  }
+}
+
+/* Tighter mobile nav on contact page */
+@media (max-width: 800px) {
+  nav ul,
+  nav.nav-compact ul,
+  .nav-compact ul {
+    max-width: 180px; /* half of the global 360px */
   }
 }
 

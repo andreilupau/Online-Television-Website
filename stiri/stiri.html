@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Global site styles -->
     <link rel="stylesheet" href="../style.css" />
-    <!-- Page-specific tweaks -->
     <link rel="stylesheet" href="stiri.css" />
     <link rel="icon" type="image/x-icon" href="../logo.png" />
     <title>Stiri</title>
@@ -17,11 +15,9 @@
       <a href="../index.html" aria-label="Home page">
         <img id="logo" src="../logo_simple.png" alt="CobraNEWS logo" />
       </a>
-      <ul class="nav-left">
-        <li><a href="/stiri/stiri.html" class="active">News➣</a></li>
-      </ul>
-      <ul class="nav-right">
-        <li><a href="/contact/contact.html">Contact➣</a></li>
+      <ul>
+        <li><a href="/stiri/stiri.html" class="active">News</a></li>
+        <li><a href="/contact/contact.html">Contact</a></li>
         <li>
           <button
             id="theme-toggle"
@@ -35,37 +31,36 @@
       </ul>
     </nav>
 
-    <!-- Politics -->
+    <!-- Culture -->
 
-    <header><a href="#politica">Politics</a></header>
+    <header><a href="#cultura">Culture</a></header>
 
     <section class="stiri-grid">
       <article class="stiri-item">
         <a href="" class="stiri-text">
-          <img src="../resurse/nicusor.jpg" alt="Nicusor Dan" />
+          <img src="../resurse/notre-dame.jpg" alt="notre-dame" />
           <p>
-            Nicuşor Dan: How this second term will unfold depends on Bucharest
-            voters
+            Notre-Dame's bells ring again for the first time since the 2019 fire
           </p>
         </a>
       </article>
 
       <article class="stiri-item">
         <a href="" class="stiri-text">
-          <img src="../resurse/avion.jpg" alt="avion de lupta" />
+          <img src="../resurse/muzeu.jpg" alt="muzeu" />
           <p>
-            Romania and the U.S. signed the protocol to buy 32 "invisible" F-35
-            fighter jets
+            National History Museum will be restored. It's Romania's second
+            largest historical monument
           </p>
         </a>
       </article>
 
       <article class="stiri-item">
         <a href="" class="stiri-text">
-          <img src="../resurse/mr-sanatatii.jpg" alt="ministrul sanatatii" />
+          <img src="../resurse/codex-aureus.jpg" alt="codex-aureus" />
           <p>
-            Health Ministry wants to ban certain harmful foods in schools.
-            What's on the list
+            Premiere: Codex Aureus, Romania's most important Western medieval
+            manuscript on display
           </p>
         </a>
       </article>
@@ -141,41 +136,6 @@
       </article>
     </section>
 
-    <!-- Culture -->
-
-    <header><a href="#cultura">Culture</a></header>
-
-    <section class="stiri-grid">
-      <article class="stiri-item">
-        <a href="" class="stiri-text">
-          <img src="../resurse/notre-dame.jpg" alt="notre-dame" />
-          <p>
-            Notre-Dame's bells ring again for the first time since the 2019 fire
-          </p>
-        </a>
-      </article>
-
-      <article class="stiri-item">
-        <a href="" class="stiri-text">
-          <img src="../resurse/muzeu.jpg" alt="muzeu" />
-          <p>
-            National History Museum will be restored. It's Romania's second
-            largest historical monument
-          </p>
-        </a>
-      </article>
-
-      <article class="stiri-item">
-        <a href="" class="stiri-text">
-          <img src="../resurse/codex-aureus.jpg" alt="codex-aureus" />
-          <p>
-            Premiere: Codex Aureus, Romania's most important Western medieval
-            manuscript on display
-          </p>
-        </a>
-      </article>
-    </section>
-
     <!-- Health -->
 
     <header><a href="#sanatate">Health</a></header>
@@ -210,33 +170,22 @@
     </section>
 
     <!-- Footer -->
-
-    <footer>
-      <section class="footer-content">
-        <figure class="footer-logo">
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-inner">
+        <a
+          href="../index.html"
+          class="footer-brand"
+          aria-label="Go to top/Home"
+        >
           <img src="../logo.png" alt="CobraNEWS logo" />
-        </figure>
-        <nav class="footer-links">
-          <ul>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        </a>
+        <nav class="footer-nav" aria-label="Footer">
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Privacy Policy</a>
+          <a href="../contact/contact.html">Contact</a>
         </nav>
-
-        <address class="footer-contact">
-          <p>
-            Email:
-            <a href="mailto:lupauandrei27@gmail.com">lupauandrei27@gmail.com</a>
-          </p>
-          <p>Phone: <a href="tel:+40123456789">+40 123 456 789</a></p>
-        </address>
-      </section>
-
-      <section class="footer-drepturi">
-        <p>© 2025 CobraNEWS. All rights reserved.</p>
-      </section>
+      </div>
+      <div class="footer-copy">© 2025 CobraNEWS. All rights reserved.</div>
     </footer>
     <script src="../script.js"></script>
   </body>
