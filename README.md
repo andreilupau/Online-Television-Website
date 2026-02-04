@@ -44,11 +44,15 @@ The project was developed using **Git + GitHub** for version control and emphasi
 <img src="https://github.com/user-attachments/assets/5f99e6a0-d925-48fa-9b6f-47e185698a2d" width="30%">
 
 
-### Thank's for your attention!
 
+## License
 
+© 2026 Lupau Andrei. All rights reserved.
 
+This project is proprietary and publicly visible for portfolio and demonstration
+purposes only.
 
+For licensing or commercial use, please contact:
+📧 andreilupau@outlook.com
 
-
-
+### Thank you for your attention!
