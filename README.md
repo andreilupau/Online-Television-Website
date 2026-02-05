@@ -52,7 +52,5 @@ The project was developed using **Git + GitHub** for version control and emphasi
 This project is proprietary and publicly visible for portfolio and demonstration
 purposes only.
 
-For licensing or commercial use, please contact:
-📧 andreilupau@outlook.com
-
 ### Thank you for your attention!
+
