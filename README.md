@@ -47,10 +47,11 @@ The project was developed using **Git + GitHub** for version control and emphasi
 
 ## License
 
-© 2026 Lupau Andrei. All rights reserved.
+© 2026 All rights reserved.
 
 This project is proprietary and publicly visible for portfolio and demonstration
 purposes only.
 
 ### Thank you for your attention!
+
 
